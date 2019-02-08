@@ -263,3 +263,11 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "block";
 }
+
+
+/* verrander img over mij when hoover
+-----------------------------------------------*/
+
+
+var fotoOvermij = document.querySelector('#OVermijFoto')
+

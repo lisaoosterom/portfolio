@@ -683,6 +683,10 @@ li a:hover {
 }
 
 
+/* link project
+/* ========================================== */
+
+
 /* single project section styles
 /* ========================================== */
 
@@ -726,31 +730,11 @@ li a:hover {
 /* mijn skills
 /* ========================================== */
 
-#mijnSkills {
+#ContainermijnSkills {
     display: flex;
-}
-
-.skills {
-    padding: 0 6px;
-    float: left;
-    width: 50%;
-    margin: 6px 0;
-}
-
-@media only screen and (max-width: 500px) {
-    .skills {
-        width: 100%;
-    }
-}
-
-.clearfix {
-    max-width: 700px;
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+    flex-direction: row;
+    max-width: 80%;
+    padding: 1em;
 }
 
 
@@ -917,9 +901,7 @@ img[alt="HCI1"] {
 .HciSlide {
     width: 600px;
     height: 375px;
-
 }
-
 
 
 /* contact section styles

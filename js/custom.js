@@ -239,35 +239,44 @@ function showDivs(n) {
 
 
 
-/* slide show hci
+/* slide show
     -------------------------------*/
 
+/* Slideshow JavaScript */
 var slideIndex = 1;
-showDivs(slideIndex);
+showSlides(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-function showDivs(n) {
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
     var i;
-    var x = document.getElementsByClassName("HciSlide");
-    if (n > x.length) {
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
         slideIndex = 1
     }
     if (n < 1) {
-        slideIndex = x.length
+        slideIndex = slides.length
+    };
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
     }
-    x[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
 }
-
+/* Slideshow JavaScript */
 
 /* verrander img over mij when hoover
 -----------------------------------------------*/
 
 
 var fotoOvermij = document.querySelector('#OVermijFoto')
-

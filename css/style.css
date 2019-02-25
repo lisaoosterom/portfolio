@@ -686,6 +686,15 @@ li a:hover {
 /* link project
 /* ========================================== */
 
+.verwijsKNOPproject {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 
 /* single project section styles
 /* ========================================== */
